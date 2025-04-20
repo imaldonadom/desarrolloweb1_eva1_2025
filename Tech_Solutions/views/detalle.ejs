@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle del Proyecto</title>
+</head>
+<body>
+  <h1>Detalle del Proyecto</h1>
+
+  <% if (proyecto) { %>
+    <p><strong>ID:</strong> <%= proyecto.id %></p>
+    <p><strong>Nombre:</strong> <%= proyecto.nombre %></p>
+    <p><strong>Fecha de inicio:</strong> <%= proyecto.fechaInicio %></p>
+    <p><strong>Estado:</strong> <%= proyecto.estado %></p>
+    <p><strong>Responsable:</strong> <%= proyecto.responsable %></p>
+    <p><strong>Monto:</strong> $<%= proyecto.monto %></p>
+  <% } else { %>
+    <p>Proyecto no encontrado.</p>
+  <% } %>
+
+  <br>
+  <a href="/proyectos">Volver a la lista</a>
+</body>
+</html>

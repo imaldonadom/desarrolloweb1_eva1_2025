@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Editar Proyecto</title>
+</head>
+<body>
+  <h1>Editar Proyecto</h1>
+
+  <form action="/proyectos/<%= proyecto.id %>" method="POST">
+    <label>Nombre:</label><br>
+    <input type="text" name="nombre" value="<%= proyecto.nombre %>" required><br><br>
+
+    <label>Fecha de inicio:</label><br>
+    <input type="date" name="fechaInicio" value="<%= proyecto.fechaInicio %>" required><br><br>
+
+    <label>Estado:</label><br>
+    <input type="text" name="estado" value="<%= proyecto.estado %>" required><br><br>
+
+    <label>Responsable:</label><br>
+    <input type="text" name="responsable" value="<%= proyecto.responsable %>" required><br><br>
+
+    <label>Monto:</label><br>
+    <input type="number" name="monto" value="<%= proyecto.monto %>" required><br><br>
+
+    <button type="submit">Guardar cambios</button>
+  </form>
+
+  <br>
+  <a href="/proyectos">Volver a la lista</a>
+</body>
+</html>

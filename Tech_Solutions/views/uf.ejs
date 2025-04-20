@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Valor de la UF</title>
+</head>
+<body>
+  <h1>Valor de la UF del día</h1>
+
+  <% if (valorUF) { %>
+    <p>La UF de hoy es: <strong>$<%= valorUF %></strong></p>
+  <% } else { %>
+    <p>No se pudo obtener el valor de la UF.</p>
+  <% } %>
+
+  <br>
+  <a href="/proyectos">Volver a la lista</a>
+</body>
+</html>
